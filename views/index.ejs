@@ -7,18 +7,29 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Coucou <small><%= current_date %></small></h1>
+        <small><%= current_date %></small>
         <!-- [!!!] updated-values sera utilisé pour cibler la balise à mettre à jour-->
         <pre id="updated-values">Pending</pre>
-        <p>
-          This is a template for a simple marketing or informational website. It
-          includes a large callout called a jumbotron and three supporting
-          pieces of content. Use it as a starting point to create something more
-          unique. puissanceNette
-        </p>
-        <p>
-          <a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
-        </p>
+
+        <div>
+          <span><small>Production : </small></span>
+          <span id="updatedProduction"></span>
+          <span> W</span>
+        </div>
+        <div>
+          <span><small>Consumption : </small></span>
+          <span id="updatedConsumption"></span>
+          <span> W</span>
+        </div>
+        <div>
+          <span><small>Net Power : </small></span>
+          <span id="updatedNetPower"></span>
+          <span> W</span>
+        </div>
+
+      <br>
+
+
       </div>
     </div>
 
