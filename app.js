@@ -34,6 +34,17 @@ app.get('/users', user.list);
 var about = require('./routes/about');
 app.get('/about', about.about);
 
+/*[!!!] REST api*/
+app.get('/api/data', function(req, res) {
+  res.send(
+    JSON.stringify({
+      val1: 10 + Math.random() * 10,
+      val2: 20 + Math.random() * 20,
+    })
+  );
+});
+
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
